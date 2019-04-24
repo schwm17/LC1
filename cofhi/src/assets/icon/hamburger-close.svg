@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>ICO_hamburger/close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-256.000000, -62.000000)">
+        <g id="ICO/hamburger/close-white" transform="translate(254.000000, 60.000000)" fill="#FFFFFF">
+            <rect id="Rectangle-2" transform="translate(10.000000, 10.000000) rotate(45.000000) translate(-10.000000, -10.000000) " x="0" y="9" width="20" height="2"></rect>
+            <rect id="Rectangle-2" transform="translate(10.000000, 10.000000) rotate(-45.000000) translate(-10.000000, -10.000000) " x="0" y="9" width="20" height="2"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'PROFILE.TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content >
+  <form class="mi-or-form">
+    
+    <div *ngIf="photoAvailable" class="mi-at-avatar mi-at-avatar--inverted">
+      <div (click)="clickProfilePhoto()">
+        <img src="{{photoAccessURL}}" class="mi-at-avatar__initial" id="personalPhoto">
+      </div>
+    </div>
+
+    <div *ngIf="!photoAvailable" class="mi-at-avatar mi-at-avatar--inverted" (click)="clickProfilePhoto()">
+      <div class="mi-at-avatar__initial">
+        {{initial}}
+      </div>
+    </div>
+
+    <fieldset class="mi-at-input_fieldset">
+      <label for="mi-at-input-text">
+        {{ 'PROFILE.FIRSTNAME' | translate }}
+      </label>
+      <input id="mi-at-input-text" class="mi-at-input mi-at-input--text" type="text" value="{{firstname}}" readonly/>
+    </fieldset>
+    <fieldset class="mi-at-input_fieldset">
+      <label for="mi-at-input-text">
+        {{ 'PROFILE.LASTNAME' | translate }}
+      </label>
+      <input id="mi-at-input-text" class="mi-at-input mi-at-input--text" type="text" value="{{lastname}}" readonly/>
+    </fieldset>
+    <fieldset class="mi-at-input_fieldset">
+      <label for="mi-at-input-date">
+        {{ 'PROFILE.BIRTHDATE' | translate }}
+      </label>
+      <input id="mi-at-input-date" class="mi-at-input mi-at-input--date" type="text" value="{{birthDate| date: 'dd.MM.y'}}" readonly/>
+    </fieldset>
+    <fieldset class="mi-at-input_fieldset">
+      <label for="mi-at-input-text">
+        {{ 'PROFILE.GENDER' | translate }}
+      </label>
+      <input id="mi-at-input-text" class="mi-at-input mi-at-input--text" type="text" value="{{gender}}" readonly/>
+    </fieldset>
+    <fieldset class="mi-at-input_fieldset">
+      <label for="mi-at-input-email">
+        {{ 'PROFILE.EMAIL' | translate }}
+      </label>
+      <input id="mi-at-input-email" class="mi-at-input mi-at-input--email" type="email" value="{{email}}" readonly/>
+    </fieldset>
+    <fieldset class="mi-at-input_fieldset">
+      <label for="mi-at-input-height">
+        {{ 'PROFILE.HEIGHT' | translate }} [CM]
+      </label>
+      <input #heightInput id="mi-at-input-height" class="mi-at-input mi-at-input--text mi-at-input-edit" 
+             type="number" [readonly]="offlineMode" [(ngModel)]="bodyHeight" [ngModelOptions]="{standalone:true}"
+             (input)="onChange()" (focus)="inputFocus()" (focusout)="inputFocusOut()" />
+    </fieldset>
+    <fieldset class="mi-at-input_fieldset">
+        <label for="mi-at-input-handedness">
+          {{ 'PROFILE.HANDEDNESS' | translate }}
+        </label>
+        <select #handSelect id="mi-at-input-handedness" class="mi-at-input mi-at-input--text mi-at-input-edit" 
+                [(ngModel)]="selectedHandedness" [ngModelOptions]="{standalone:true}"
+                (focus)="selectFocus()" (focusout)="selectFocusOut()" (change)="onChange()">
+                <option *ngFor='let hand of hands' [value]='hand.coding[0].code' class="opt-select">{{ 'SNOMED.' + hand.coding[0].code | translate}}</option>
+        </select>
+      </fieldset>
+    <button *ngIf="confirmAvailable" class="mi-mo-flat_button mi-mo-flat_button--submit" (click)="confirm()">
+      <span class="mi-at-text">{{'PROFILE.CONFIRM_CHANGES' | translate}}</span>
+    </button>
+  </form>
+</ion-content>

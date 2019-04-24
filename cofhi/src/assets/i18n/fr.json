@@ -1,0 +1,118 @@
+{
+  "MENU" :{
+    "EDITPROFILE": "Mon profil",
+    "SIGNOUT": "Déconnexion",
+    "CONTACT": "Contact"
+  },
+  "COMMON": {
+    "PLEASEWAIT": "Veuillez patienter...",
+    "THISWEEK": "Cette semaine",
+    "LASTWEEK": "La semaine passée",
+    "OFFLINE": "Vous n'êtes pas connecté actuellement"
+  },
+  "HOME": {
+    "TITLE": "Home"
+  }, 
+  "AD": {
+    "TITLE": "Testament de vie",
+    "DESCRIPTION": "Répondre aux questions"
+  },
+  "IMPRESSUM": {
+    "TITLE": "Impressum",
+    "PUBLISHER": "Éditeur",
+    "PUBLISHERNAME": "Votre société",
+    "IMPLEMENTATION": "Mise en oeuvre technique",
+    "BFH": "Haute école spécialisé bernoise",
+    "I4MI": "Institut d'informatique médicale - I4MI",
+    "ETH": "EPFZ",
+    "IIS": "Institut des systèmes d'information",
+    "DATA_RETENTION": "Gestion des données",
+    "APP": "Application",
+    "PLATFORM": "Plateforme",
+    "VERSION": "Version"
+  },
+  "BLOOD": {
+    "TITLE": "Pulsation",
+    "MYGROUP": "Mon groupe sanguin",
+    "MYMEASURE": "Mes messures",
+    "NOVALUE": "Pas de valeur pour cette semaine",
+    "NEWMANUALVALUE": {
+      "TITLE": "Nouvelle valeur manuel",
+      "CAPTION": "Veuillez entrer une nouvelle valeur en [pulsation/min]:",
+      "SAVE": "enregistrer",
+      "CANCEL": "annuler"
+    },
+    "NEWMEASURE": {
+      "TITLE": "Messurer son pouls",
+      "CAPTIONTITLE": "Instructions",
+      "CAPTION": "Veuillez coller votre doigt sur l'objectif arrière et le flash de votre smartphone et ceci tout le temps du compte-à-rebour. La messure dure 10 secondes",
+      "START": "Commencer",
+      "RESULTTITLE": "Resultat",
+      "RESULTCAPTION": "Votre pouls est de ",
+      "UNIT": "[battement/minutes]",
+      "ERROR": "An error occurred during measurement"
+    },
+    "ERRORS": {
+      "NOVALUEENTERED": "Houston nous avons un problème! Entrez un nombre entier entre 40 et 220..."
+    }
+  },
+  "APPCOMPONENT": {
+    "WELCOME": "Welcome to MiDemo",
+    "HELP": "What can I do for you?",
+    "TIPPS": "Tipps!",
+    "LOGIN": "Login",
+    "REGISTER": "Register",
+    "ERRORS": {
+      "SESSIONEXPIRED": {
+        "TITLE": "Connexion expirée",
+        "MESSAGE": "Votre connexion a MIDATA expirée. Veuillez vous reconnecter."
+      },
+      "DISCONNECT": {
+        "TITLE": "Keine Internetverbindung"
+      }
+    }
+  },
+  "PROFILE": {
+    "TITLE": "Profil",
+    "USERNAME": "Nom d'utilisateur",
+    "EMAIL": "E-mail",
+    "FIRSTNAME": "Prénom",
+    "LASTNAME": "Nom", 
+    "NAME": "Nom",
+    "BIRTHDATE": "Date de naissance",
+    "GENDER": "Sexe",
+    "MALE": "homme",
+    "FEMALE": "femme",
+    "OTHER" : "autre",
+    "HEIGHT": "Taille",
+    "HANDEDNESS": "Main dominante",
+    "CONFIRM_CHANGES": "Confirmer les changements",
+    "ALERT": {
+        "FALSE_VALUE_HEIGHT": "La valeur de la taille doit être comprise entre 30 et 250 cm.",
+        "VALIDATION": "Entrées invalides",
+        "TITLE_PHOTO_UPDATE": "Ajout d'une photo"
+    },
+    "BUTTON": {
+        "ADD": "Remplacer",
+        "DELETE": "Effacer",
+        "CANCEL": "Annuler",
+        "TAKE": "Faire une photo",
+        "RETRY": "Réessayer",
+        "SAVE": "Enregistrer",
+        "CLOSE": "Fermer",
+        "NEXT": "Suivant",
+        "PREVIOUS": "Précédant"
+    }, 
+    "LEAVE": {
+      "TITLE": "Voulez-vous quitter ce site?",
+      "MESSAGE": "Les modifications que vous avez apportées peuvent ne pas être sauvegardées.",
+      "CANCEL": "Annuler",
+      "CONFIRM_TEXT": "Quitter"
+    }
+  },
+  "SNOMED": {  
+    "87683000": "Linke Hand",
+    "46669005": "Rechte Hand",
+    "23088002": "Beide"
+  }
+}

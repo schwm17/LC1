@@ -1,0 +1,118 @@
+{
+  "MENU" :{
+    "EDITPROFILE": "Edit Profile",
+    "SIGNOUT": "Sign out",
+    "CONTACT": "Contact"
+  },
+  "COMMON": {
+    "PLEASEWAIT": "Please wait...",
+    "THISWEEK": "This week",
+    "LASTWEEK": "Last week",
+    "OFFLINE": "You are currently not logged in"
+  },
+  "HOME": {
+    "TITLE": "Home"
+  }, 
+  "AD": {
+    "TITLE": "Advance directives",
+    "DESCRIPTION": "Answer the questions"
+  },
+  "IMPRESSUM": {
+    "TITLE": "Impressum",
+    "PUBLISHER": "Publisher",
+    "PUBLISHERNAME": "Your company",
+    "IMPLEMENTATION": "Technical implementation",
+    "BFH": "Bern University of Applied Sciences",
+    "I4MI": "Institute for Medical Informatics - I4MI",
+    "ETH": "ETH",
+    "IIS": "Institute of Information Systems",
+    "DATA_RETENTION": "Data management",
+    "APP": "Application",
+    "PLATFORM": "Platform",
+    "VERSION": "Version"
+  },
+  "BLOOD": {
+    "TITLE": "Blood",
+    "MYGROUP": "My blood type",
+    "MYMEASURE": "My mesasures",
+    "NOVALUE": "No value for this week",
+    "NEWMANUALVALUE": {
+      "TITLE": "New manual entry",
+      "CAPTION": "What is your current pulse (heartbeat) value in [pulse/min]?",
+      "SAVE": "save",
+      "CANCEL": "cancel"
+    },
+    "NEWMEASURE": {
+      "TITLE": "Measuring your pulse",
+      "CAPTIONTITLE": "Instructions",
+      "CAPTION": "Please put your finger on the back lens and flash of your smartphone and this all the time from count-down. The measure lasts 10 seconds",
+      "START": "Start",
+      "RESULTTITLE": "Result",
+      "RESULTCAPTION": "Your heartbeat is ",
+      "UNIT": "[beat/min]",
+      "ERROR": "An error occurred during measurement"
+    },
+    "ERRORS": {
+      "NOVALUEENTERED": "Houston we have a problem! Please enter a valide value between 40 and 220..."
+    }
+  },
+  "APPCOMPONENT": {
+    "WELCOME": "Welcome to MiDemo",
+    "HELP": "What can I do for you?",
+    "TIPPS": "Tipps!",
+    "LOGIN": "Login",
+    "REGISTER": "Register",
+    "ERRORS": {
+      "SESSIONEXPIRED": {
+        "TITLE": "Connection expired",
+        "MESSAGE": "Your connection to MIDATA has been terminated. Please log in again."
+      },
+      "DISCONNECT": {
+        "TITLE": "Keine Internetverbindung"
+      }
+    }
+  },
+  "PROFILE": {
+    "TITLE": "Profile",
+    "USERNAME": "Username",
+    "EMAIL": "Email",
+    "FIRSTNAME": "First name",
+    "LASTNAME": "Last name", 
+    "NAME": "Name",
+    "BIRTHDATE": "Date of birth",
+    "GENDER": "Gender",
+    "MALE": "Male",
+    "FEMALE": "Female",
+    "OTHER" : "Other",
+    "HEIGHT": "Height",
+    "HANDEDNESS": "Dominant hand",
+    "CONFIRM_CHANGES": "Confirm changes ",
+    "ALERT": {
+        "FALSE_VALUE_HEIGHT": "The height must lie between 30 and 250 cm.",
+        "VALIDATION": "Invalid Entries",
+        "TITLE_PHOTO_UPDATE": "Add photo"
+    },
+    "BUTTON": {
+        "ADD": "Replace",
+        "DELETE": "Delete",
+        "CANCEL": "Cancel",
+        "TAKE": "Take a picture",
+        "RETRY": "Retry",
+        "SAVE": "Save",
+        "CLOSE": "Close",
+        "NEXT": "Next",
+        "PREVIOUS": "Previous"
+    },
+    "LEAVE": {
+      "TITLE": "Do you want to leave this site?",
+      "MESSAGE": "Changes you made may not be saved.",
+      "CANCEL": "Cancel",
+      "CONFIRM_TEXT": "Leave"
+    }
+  },
+  "SNOMED": {  
+    "87683000": "Left hand",
+    "46669005": "Right hand",
+    "23088002": "Ambidextrous"
+  }
+}

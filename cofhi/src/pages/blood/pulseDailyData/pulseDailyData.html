@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button navPop icon-only>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Blood pulse</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content has-footer no-bounce>
+  <h1>{{formatDate(dateOfDay, 'dddd Do MMMM YYYY')}}</h1>
+  <ion-card *ngIf="dailyData.length > 3">
+    <ion-card-content>
+      <canvas #chartCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-item-sliding #item *ngFor="let measure of dailyData">
+      <ion-item>
+        <ion-icon name="heart-outline" item-start color="danger"></ion-icon>
+        <h2>{{formatDate(measure.date, 'HH:mm')}}</h2>
+        <p>{{measure.value}}</p>
+        </ion-item>
+        <ion-item-options>
+          <button ion-button color="danger" (click)="delete(item)">
+            <ion-icon name="trash"></ion-icon>
+            Delete
+        </button>
+        </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,744 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    rgb(50, 77, 92),
+  secondary:  rgb(236,140,30),
+  danger:     rgb(214, 57, 49),
+  light:      rgb(106,106,106),
+  dark:       rgb(66,66,66)
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+$toast-ios-background: #f53d3d;
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+$toast-md-background: #f53d3d;
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+$item-md-detail-push-show: true;
+$item-wp-detail-push-show: true;
+
+@charset "UTF-8";
+/**
+ * Core dependencies
+ */
+/**
+ * Core imports.
+ */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * Transitions
+ */
+/**
+ * Minimal width for a menu that looks like in the mockups
+ * On screens that have a width smaller than this value,
+ * some non essential UI elements may be hidden.
+ */
+/**
+	* Minimal width for a pretty menu
+  * On screens that have a width smaller than this value,
+	*	display elements are arranged 'at best'.
+	*/
+/**
+ * Button reset.
+ */
+/**
+ * Input reset.
+ */
+/**
+ * Colors
+ */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Medium.eot");
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../assets/fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Medium.woff2") format("woff2"), url("../assets/fonts/Roboto-Medium.woff") format("woff"), url("../assets/fonts/Roboto-Medium.ttf") format("truetype"), url("../assets/fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Book';
+  src: url("../assets/fonts/Roboto-Book.eot");
+  src: local("Roboto Book"), local("Roboto-Book"), url("../assets/fonts/Roboto-Book.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Book.woff2") format("woff2"), url("../assets/fonts/Roboto-Book.woff") format("woff"), url("../assets/fonts/Roboto-Book.ttf") format("truetype"), url("../assets/fonts/Roboto-Book.svg#Roboto-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/**
+ * Font families
+ */
+/**
+	* Default font sizes
+	*/
+/*
+ * These placeholder classes define standards for commonly used styles.
+ * They can be used anywhere with @extend %mi-x-[put_class_name_here]
+ * to be applied to any element throughout the whole UX.
+ * 
+ * Reminder: SASS/SCSS placeholder classes ( = name starts with %)
+ * are not printed in the final CSS unless used with @extend.
+ *
+ * Like 'state-related classes' you can find elsewhere in this styleguide
+ * (e.g. .mi-x-is_first, .mi-x-is_last…)
+ * these placeholder classes all include the mi-x- prefix to avoid conflicts
+ * with other pre-existing classes when integrated in other codebases.
+ */
+/*
+ ** Text-related classes
+ */
+.mi-mo-flat_button--submit .mi-at-text {
+  text-transform: uppercase; 
+}
+
+/*
+ ** Gradients
+ */
+.mi-mo-flat_button--submit {
+  background: -webkit-gradient(linear, left top, right top, from(#32c6b6), to(#0879dd));
+  background: linear-gradient(90deg, #32c6b6, #0879dd); 
+}
+
+.mi-at-text {
+  font-size: 16px;
+  color: #333333;
+  font-family: "Roboto Book";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+.mi-at-text--white {
+  color: #fff; 
+}
+.mi-at-text--smaller {
+  font-size: 14px; 
+}
+.mi-at-text--smallest {
+  font-size: 12px;
+  letter-spacing: .5px; 
+}
+.mi-at-text--title {
+  font-size: 18px; 
+}
+.mi-at-text--highlighted {
+  font-family: "Roboto"; 
+}
+
+.mi-at-icon {
+  z-index: 1; 
+}
+
+.mi-at-icon__notifications {
+  font-size: 7px;
+  color: #fff;
+  font-family: "Roboto Book";
+  position: relative;
+  top: -21px;
+  left: 13px;
+  width: 10px;
+  z-index: 2; 
+}
+.mi-at-icon__notifications::after {
+    content: "";
+    border-radius: 50%;
+    background-color: #f95428;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: -2px;
+    left: -4px;
+    z-index: -1; 
+  }
+
+.mi-at-avatar {
+  position: relative;
+  height: 52px;
+  width: 52px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%; 
+}
+.mi-at-avatar__initial {
+  font-size: 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #3f8efc;
+  font-family: "Roboto Book";
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+}
+.mi-at-avatar--inverted {
+  height: 68px;
+  width: 68px;
+  background-color: #3f8efc; 
+}
+.mi-at-avatar--inverted .mi-at-avatar__initial {
+  color: #fff;
+  font-size: 40px; 
+}
+
+.mi-at-input {
+  font-size: 1em;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  outline: 0;
+  position: absolute;
+  left: 155px;
+  width: calc(100% - 178px);
+  caret-color: #3f8efc;
+  font-family: "Roboto Book";
+  vertical-align: bottom; 
+}
+.mi-at-input_fieldset {
+  position: relative;
+  height: 40px;
+  padding-left: 23px; 
+}
+.mi-at-input_fieldset::after {
+  content: '';
+  position: absolute;
+  left: 23px;
+  margin-top: 30px;
+  width: calc(100% - 46px);
+  border-bottom: solid 1px #e6e6e6; 
+}
+//own class
+.mi-at-input-edit {
+  border-bottom: 1px solid #3f8efc !important;
+}
+.mi-at-input-active {
+  border-bottom: 1px solid #32db64 !important;
+}
+
+label {
+  font-size: 14px;
+  position: relative;
+  top: 3px;
+  color: #b3b3b3;
+  font-family: "Roboto Book";
+  vertical-align: bottom; 
+}
+@supports (-moz-appearance: meterbar) and (background-blend-mode: difference, normal) {
+  label {
+      top: 1px; 
+  } 
+}
+
+/*
+ ** This SCSS file includes 'state-related classes'
+ *  whose name is prefixed with .mi-x-.
+ *  They describe the state of an element.
+ *  Examples: .mi-is_first, .mi-is_last, .mi-is_typing…
+ *  They are provided and documented here but have to be added using JS.
+ *
+ *  ---
+ ** A NOTE ABOUT BORDER RADIUSES
+ *  ---
+ *  Chat bubbles have different border radius depending on whether they are the first
+ 		or last message of the group of messages from the same sender:
+
+ 		* the first message has all borders round except for
+	 		the bottom one (bottom left for MIDATA messages, bottom right for user messages) 
+
+ 		* the last message has all borders round except for
+	 		the top one (top left for MIDATA messages, top right for user messages) 
+
+	 	* messages that are neither the first nor the last from the group
+	 		have round borders on the inside (MIDATA: top and bottom left,
+	 		user: top and bottom right) and straight borders on the outside
+
+	 	This CSS does not handle any logic, of course.
+	 	So you have to dynamically add and remove relevant classes:
+
+		* for MIDATA messages:
+		 	* mi-is_first_midata for the first message in the group
+		 	* mi-is_last_midata for the last message in the group
+
+		* for user messages:
+	  	* mi-is_first_user for the first message in the group
+	  	* mi-is_last_user for the last message in the group
+	*
+	*
+	*  ---
+	** WHEN SOMEONE IS TYPING
+	*  ---
+	*  The 'state-related' class .mi-x-is_typing
+	*  has to be added using JS.
+	*
+	*  What it does:
+	*  hides the "mi-at-chat_bubble__message" span
+	*  and replaces it with three animated dots.
+	*/
+.mi-at-chat_bubble {
+  font-size: 16px;
+  width: 245px;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: "Roboto Book"; 
+}
+.mi-at-chat_bubble--midata {
+  margin-top: 5px;
+  background-color: #f4f4f4;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; 
+}
+.mi-at-chat_bubble--midata.mi-x-is_first_midata {
+  margin-top: 16px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 8px; 
+}
+.mi-at-chat_bubble--midata.mi-x-is_last_midata {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 0; 
+}
+.mi-at-chat_bubble--user {
+  margin-top: 5px;
+  margin-right: 0;
+  margin-left: auto;
+  background-color: #3f8efc;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  color: #fff; 
+}
+.mi-at-chat_bubble--user.mi-x-is_first_user {
+  margin-top: 16px;
+  margin-right: 0;
+  margin-left: auto;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 8px; 
+}
+.mi-at-chat_bubble--user.mi-x-is_last_user {
+  margin-right: 0;
+  margin-left: auto;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 0; 
+}
+.mi-at-chat_bubble.mi-x-is_typing {
+  display: table;
+  position: relative;
+  margin-top: 16px;
+  height: 28px;
+  width: 56px;
+  border-radius: 8px; 
+}
+.mi-at-chat_bubble.mi-x-is_typing span {
+  margin: 10px 2px;
+  height: 8px;
+  width: 8px;
+  background-color: #333;
+  border-radius: 50%;
+  float: left;
+  opacity: .4; 
+}
+.mi-at-chat_bubble.mi-x-is_typing span:nth-of-type(2) {
+  -webkit-animation: 2s blink infinite 1s ease-in;
+  animation: 2s blink infinite 1s ease-in; 
+}
+.mi-at-chat_bubble.mi-x-is_typing span:nth-of-type(3) {
+  -webkit-animation: 2s blink infinite 1.5s ease-in;
+  animation: 2s blink infinite 1.5s ease-in; 
+}
+.mi-at-chat_bubble.mi-x-is_typing span:nth-of-type(4) {
+  -webkit-animation: 2s blink infinite 2s ease-in;
+  animation: 2s blink infinite 2s ease-in; 
+}
+.mi-at-chat_bubble.mi-x-is_typing span:nth-of-type(2) {
+  margin-left: 10px; 
+}
+.mi-at-chat_bubble.mi-x-is_typing .mi-at-chat_bubble__message {
+  display: none; 
+}
+.mi-at-chat_bubble--choice {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+  height: 36px;
+  width: 235px;
+  border: solid 1px #3f8efc;
+  border-radius: 8px;
+  color: #3f8efc;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none; 
+}
+.mi-at-chat_bubble--choice:first-of-type {
+  margin-top: 16px; 
+}
+
+@-webkit-keyframes blink {
+  25% {
+    opacity: .4; }
+  50% {
+    opacity: .6; }
+  75% {
+    opacity: .8; }
+  100% {
+    opacity: .4; } }
+
+@keyframes blink {
+  25% {
+    opacity: .4; }
+  50% {
+    opacity: .6; }
+  75% {
+    opacity: .8; }
+  100% {
+    opacity: .4; } }
+
+.mi-mo-flat_button {
+  font-size: 1em;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  outline: 0;
+  position: relative;
+  height: 52px;
+  width: 100%;
+  line-height: 52px; 
+}
+.mi-mo-flat_button .mi-at-text {
+  position: relative;
+  left: -10px; 
+}
+.mi-mo-flat_button .mi-at-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -7px; 
+}
+.mi-mo-flat_button--submit .mi-at-text {
+  color: white; 
+}
+.mi-mo-flat_button--rounded {
+  width: 180px;
+  border-radius: 8px;
+  border: solid 1px;
+  border-color: #fff;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all; 
+}
+.mi-mo-flat_button--rounded .mi-at-text {
+  text-transform: uppercase;
+  color: #fff; 
+}
+@media (max-width: 270px) {
+  .mi-mo-flat_button {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; 
+  }
+  .mi-mo-flat_button .mi-at-text {
+    left: -5px; 
+  } 
+}
+
+.mi-mo-menu_main_buttons {
+  width: 100%;
+  background-color: #f9f9f9; 
+}
+.mi-mo-menu_main_buttons .mi-mo-flat_button {
+  display: inline-block;
+  position: relative;
+  width: 100%; 
+}
+.mi-mo-menu_main_buttons .mi-mo-flat_button::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  top: 5px;
+  border: 1px solid #e6e6e6; 
+}
+@media (max-width: 270px) {
+  .mi-mo-menu_main_buttons .mi-mo-flat_button::after {
+    display: none; 
+  } 
+}
+@media (max-width: 230px) {
+  .mi-mo-menu_main_buttons .mi-mo-flat_button::after {
+    display: initial;
+    right: 10%;
+    left: 10%;
+    height: 0px;
+    bottom: 0;
+    top: initial; 
+  } 
+}
+.mi-mo-menu_main_buttons .mi-mo-flat_button:last-of-type::after {
+  border: none; 
+}
+@media (min-width: 230px) {
+  .mi-mo-menu_main_buttons .mi-mo-flat_button {
+    width: 49%; 
+  } 
+}
+
+.mi-mo-menu_item {
+  display: block;
+  position: relative; 
+}
+.mi-mo-menu_item .mi-at-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  height: 20px; 
+}
+.mi-mo-menu_item .mi-at-text {
+  position: relative;
+  left: 47px;
+  height: 40px;
+  line-height: 40px;
+  white-space: nowrap; 
+}
+
+.mi-mo-menu_items_list {
+  overflow-y: scroll; 
+}
+
+.mi-mo-menu_header {
+  background-image: url("../assets/img/menuBackground.svg");
+  position: absolute;
+  top: 0;
+  height: 162px;
+  width: 100%;
+ 
+}
+.mi-mo-menu_header .mi-at-avatar {
+  position: absolute;
+  left: 22px;
+  top: 22px; 
+}
+.mi-mo-menu_header .mi-at-text {
+  display: block; 
+}
+.mi-mo-menu_header__data {
+  position: relative;
+  height: calc(100% - 22px);
+  padding-top: 22px;
+  padding-left: 93px; 
+}
+.mi-mo-menu_header__data_user {
+  max-width: calc(100% - 40px);
+  padding-top: 10px;
+  padding-bottom: 15px; 
+}
+.mi-mo-menu_header__data_user > * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+.mi-mo-menu_header__data_user::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 26px;
+  padding-top: 15px;
+  border-bottom: solid 1px #fff; 
+}
+.mi-mo-menu_header__data_connections {
+  width: 100%;
+  padding-top: 15px; 
+}
+.mi-mo-menu_header__data_connections li span:nth-child(1) {
+  width: 22px;
+  float: left; 
+}
+.mi-mo-menu_header > .mi-at-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px; 
+}
+
+.mi-mo-menu_footer {
+  position: absolute;
+  left: 0;
+  height: 60px;
+  width: calc(100% - 65px);
+  padding-bottom: 22px;
+  padding-left: 20px;
+  background-color: white; 
+}
+.mi-mo-menu_footer::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  width: 100%; 
+}
+.mi-mo-menu_footer .mi-at-text {
+  position: relative;
+  top: 38px;
+  margin-right: 30px; }
+.mi-mo-menu_footer .mi-at-text:last-of-type {
+  margin-right: 0; 
+}
+
+.mi-or-mobile_menu {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  whitespace: nowrap; 
+}
+.mi-or-mobile_menu .mi-mo-menu_header {
+  position: relative;
+  z-index: 1; 
+}
+.mi-or-mobile_menu .mi-mo-main_menu_buttons {
+  position: relative; 
+}
+.mi-or-mobile_menu .mi-mo-menu_items_list {
+  position: relative;
+  left: 21px;
+  top: 15px;
+  /** 162px : header height
+    * 52px : flat buttons height
+    * 60px : footer height
+    * and added 50px more to truncate the last item
+    * so that user understands there is more below
+    */
+  height: calc(100vh - 162px - 52px - 60px - 40px); 
+}
+.mi-or-mobile_menu .mi-mo-menu_footer {
+  bottom: 0; 
+}
+
+.mi-or-form {
+  max-height: 100vh; 
+}
+.mi-or-form .mi-at-input_fieldset {
+  margin-top: 15px; 
+}
+.mi-or-form .mi-mo-flat_button--submit {
+  position: absolute;
+  bottom: 0; 
+}
+.mi-or-form .mi-at-avatar {
+  position: absolute;
+  left: 22px;
+  top: 22px; 
+}
+.mi-or-form .mi-at-input_fieldset:first-of-type {
+  padding-top: 105px; 
+}
+
+.mi-or-chat {
+  position: relative;
+  margin-left: 22px;
+  margin-right: 22px; 
+}
+.mi-or-chat.mi-x-is_scrolled::before {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0)); 
+}
+

@@ -1,0 +1,122 @@
+{
+  "QQ": "QQQ",
+  "MENU" :{
+    "EDITPROFILE": "Profil ändern",
+    "SIGNOUT": "Abmelden",
+    "CONTACT": "Kontakt"
+  },
+  "COMMON": {
+    "PLEASEWAIT": "Ein Moment Geduld, bitte...",
+    "THISWEEK": "Diese Woche",
+    "LASTWEEK": "Letzte Woche",
+    "OFFLINE": "Du bist derzeit nicht angemeldet"
+  },
+  "HOME": {
+    "TITLE": "Home"
+  }, 
+  "TEST": {
+    "TITLE": "TestSeite"
+  }, 
+  "AD": {
+    "TITLE": "Patientenverfügung",
+    "DESCRIPTION": "Fragen beantworten"
+  },
+  "IMPRESSUM": {
+    "TITLE": "Impressum",
+    "PUBLISHER": "Herausgeber",
+    "PUBLISHERNAME": "Ihre Firma",
+    "IMPLEMENTATION": "Technische Umsetzung",
+    "BFH": "Berner Fachhochschule",
+    "I4MI": "Institut für Medizininformatik - I4MI",
+    "ETH": "ETH",
+    "IIS": "Institute of Information Systems",
+    "DATA_RETENTION": "Datenhaltung",
+    "APP": "Applikation",
+    "PLATFORM": "Plattform",
+    "VERSION": "Version"
+  },
+  "BLOOD": {
+    "TITLE": "Blut",
+    "MYGROUP": "Meine Blutgruppe",
+    "MYMEASURE": "Meine Massnahmen",
+    "NOVALUE": "Kein Wert für diese Woche",
+    "NEWMANUALVALUE": {
+      "TITLE": "Neuer manueller Eintrag",
+      "CAPTION": "Bitte geben Sie einen neuen Wert in [Herzschlag / min] ein:",
+      "SAVE": "speichen",
+      "CANCEL": "abbrechen"
+    },
+    "NEWMEASURE": {
+      "TITLE": "Messen der Puls",
+      "CAPTIONTITLE": "Anleitung",
+      "CAPTION": "Bitte fügen Sie Ihren Finger auf die hintere Linse und den Blitz Ihres Smartphones und dies die ganze Zeit von count-down. Die Messungen dauert 10 Sekunden",
+      "START": "Start",
+      "RESULTTITLE": "Ergebnisse",
+      "RESULTCAPTION": "Dein Herzschlag ist ",
+      "UNIT": "[Herzschlag/Minute]",
+      "ERROR": "Ein fehler ist während der Messung aufgetreten"
+    },
+    "ERRORS": {
+      "NOVALUEENTERED": "Houston, wir haben ein Problem! Bitte geben Sie eine ganze Zahl zwischen 40 und 220 ein..."
+    }
+  },
+  "APPCOMPONENT": {
+    "WELCOME": "Willkommen bei",
+    "HELP": "Was kann ich für dich tun?",
+    "TIPPS": "Tipps!",
+    "LOGIN": "Anmelden",
+    "REGISTER": "Registrieren",
+    "ERRORS": {
+      "SESSIONEXPIRED": {
+        "TITLE": "Verbindung abgelaufen",
+        "MESSAGE": "Ihre Verbindung zu MIDATA wurde beendet. Bitte melden Sie sich erneut an."
+      },
+      "DISCONNECT": {
+        "TITLE": "Keine Internetverbindung"
+      }
+    }
+  },
+  "PROFILE": {
+    "TITLE": "Profil",
+    "USERNAME": "Benutzername",
+    "EMAIL": "Email",
+    "FIRSTNAME": "Vorname",
+    "LASTNAME": "Nachname", 
+    "NAME": "Name",
+    "BIRTHDATE": "Geburtsdatum",
+    "GENDER": "Geschlecht",
+    "OTHER" : "Andere",
+    "MALE": "Männlich",
+    "FEMALE": "Weiblich",
+    "HEIGHT": "Grösse",
+    "HANDEDNESS": "Dominante Hand",
+    "CONFIRM_CHANGES": "Änderungen übernehmen",
+    "ALERT": {
+      "FALSE_VALUE_HEIGHT": "Die Grösse muss zwischen 30 und 250 cm liegen.",
+      "VALIDATION": "Ungültige Eingaben ",
+      "TITLE_PHOTO_UPDATE": "Foto hinzufügen"
+    },
+    "BUTTON": {
+      "ADD": "Ersetzen",
+      "DELETE": "Löschen",
+      "CANCEL": "Abbrechen",
+      "TAKE": "Foto aufnehmen",
+      "RETRY": "Wiederholen",
+      "SAVE": "Speichern",
+      "CLOSE": "Schliessen",
+      "NEXT": "Weiter",
+      "PREVIOUS": "Zurück"
+    },
+    "LEAVE": {
+      "TITLE": "Wollen Sie die Seite wirklich verlassen?",
+      "MESSAGE": "Die gemachten Änderungen werden nicht gespeichert.",
+      "CANCEL": "Abbrechen",
+      "CONFIRM_TEXT": "Verlassen"
+    }
+  },
+  "SNOMED": {  
+    "87683000": "Linke Hand",
+    "46669005": "Rechte Hand",
+    "23088002": "Beide"
+  }
+}

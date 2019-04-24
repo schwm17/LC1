@@ -1,0 +1,399 @@
+{
+    "groups": [
+        {
+            "groupTitle": "Incapacité de prendre des décisions",
+            "groupDescription": "Dans ce groupe de question, nous nous intéressons à vos souhaits, dans le cas ou vous seriez dans l'incapacité de prendre des décisions.",
+            "questions": [
+                {
+                    "question": "Qui peut prendre des décisions?",
+                    "inputType": "text",
+                    "answers": [
+                        {
+                            "label": "Nom: ",
+                            "value": "name"
+                        },
+                        {
+                            "label": "Prénom: ",
+                            "value": "firstName"
+                        },
+                        {
+                            "label": "Adresse: ",
+                            "value": "adress"
+                        },
+                        {
+                            "label": "Téléphone: ",
+                            "value": "phone"
+                        }
+                    ]
+                },
+                {
+                    "question": "Que faire en cas de douleur?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Soulager la douleur même si mon état de conscience se retrouve altéré et ma durée de vie diminué",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Rendre mon état supportable tout en gardant mes périodes de lucidité",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que faire en cas de dyspnée (difficulté respiratoire)?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Utiliser l'assistance respiratoire",
+                            "subAnswers": [
+                                {
+                                    "label": "Avec entubation",
+                                    "subAnswers": false
+                                },
+                                {
+                                    "label": "Sans entubation",
+                                    "subAnswers": false
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Ne pas utiliser l'assistance respiratoire",
+                            "subAnswers": [
+                                {
+                                    "label": "Avec médicaments",
+                                    "subAnswers": false
+                                },
+                                {
+                                    "label": "Sans médicaments, rendre juste supportable",
+                                    "subAnswers": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Comment doit-on m'alimenter au besoin?",
+                    "inputType": "checkbox",
+                    "answers": [
+                        {
+                            "label": "Accepter mon refus"
+                        },
+                        {
+                            "label": "Refuse de prendre des compléments alimentaires (vitamines, boissons énergétiques)"
+                        },
+                        {
+                            "label": "Par sonde nasogastrique"
+                        },
+                        {
+                            "label": "Par sonde gastrique percutanée"
+                        },
+                        {
+                            "label": "Par perfusion"
+                        }
+                    ]
+                },
+                {
+                    "question": "Doit-on m'hydrater par perfusion?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Non"
+                        },
+                        {
+                            "label": "A court terme"
+                        },
+                        {
+                            "label": "A long terme (>1 mois)"
+                        },
+                        {
+                            "label": "Laisser mon représentant choisir"
+                        }
+                    ]
+                },
+                {
+                    "question": "Doit-on me réanimer?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Oui",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Non",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Doit-on me transférer dans un centre de soins aigu?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Oui",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Non",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Uniquement si c'est la seule solution",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Quel doit-être le lieu de fin de vie?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "A la maison",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Dans un établissement de soins paliatifs",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Est-ce que je souhaite un accompagnement religieux?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Oui",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Non",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Est-ce que j'accepte qu'on m'administre de la médication?",
+                    "inputType": "checkbox",
+                    "answers": [
+                        {
+                            "label": "Médicaments pour nouvelles maladies",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Antibiotiques",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Sédatifs",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Médicaments pour affections préexistantes",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Est-ce que j'accepte les traitements suivants?",
+                    "inputType": "checkbox",
+                    "answers": [
+                        {
+                            "label": "Chimiothérapie",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Intervention chirurgicale",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Transfusion sanguine",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Dialyse",
+                            "subAnswers": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groupTitle": "Après le décès",
+            "groupDescription": "Dans ce groupe de question, nous nous intéressons à vos souhaits, après votre décès.",
+            "questions": [
+                {
+                    "question": "Peut-on prélever vos liquides et solides corporels afin d'alimenter une banque biologique",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Oui",
+                            "subAnswers": [
+                                {
+                                    "label": "De mon vivant",
+                                    "subAnswers": false
+                                },
+                                {
+                                    "label": "A ma mort",
+                                    "subAnswers": false
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Non",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Peut-on faire des recherches médicales sur mon corps",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Oui",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Non",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Souhaitez-vous donner vos organes?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Oui",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Non",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Souhaitez-vous qu'une autopsie soit effectué?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Non",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "En cas de mort inattendue (je suis conscient que cela engendrera des coûts)",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Dans tous les cas (je suis conscient que cela engendrera des coûts)",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "A des fins d'enseignement et de recherche",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Souhaitez-vous léguer votre corps?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Non",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "A un institut d'anatomie",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "A un institut d'anatomie uniquement dans le cadre de ma maladie",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Souhaitez-vous qu'on puisse consulter votre dossier médical?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Non",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Consultation uniquement du dossier médical",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Accès illimité",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Comment souhaitez-vous que soient réalisé vos obsèques?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Crémation",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Enterrement",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Comment souhaitez-vous que se déroule vos funérailles?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Pas de cérémonie",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Avec une cérémonie",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Comment souhaitez-vous que soient réalisé votre enterrement?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Dans une tombe traditionnelle",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Dans un jardin du souvenir (tombe collective)",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Dans la tombe familiale",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Pas de tomber",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Autre",
+                            "subAnswers": [
+                                {
+                                    "label": "Conserver mon corps",
+                                    "subAnswers": false
+                                },
+                                {
+                                    "label": "Disperser mes cendres",
+                                    "subAnswers": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

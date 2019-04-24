@@ -1,0 +1,56 @@
+page-login {
+  
+
+  ion-img {
+    background-color: transparent;
+    contain: none;
+  }
+
+
+  .helper {
+    display: inline-block;
+    height: 90%;
+    vertical-align: middle;
+  }
+
+
+
+  .slide-title {
+    margin-top: 18rem;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: 4vh;
+  }
+
+
+  .cofhiLogoWrapper{
+    margin-top: 3rem;
+  }
+
+  .cofhiLogo img{
+    margin: 0px auto;
+    width: 60%;
+  }
+
+  .wrapper {
+    height: 3em;
+    background-color: rgb(236, 140, 30);
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3vh;
+    vertical-align: middle;
+    line-height: 3em;
+  }
+
+  .default {
+    font-weight: bold;
+  }
+
+  #btnZone {
+    width: 100%;
+    position: fixed;
+    bottom: 5%;
+  }
+}

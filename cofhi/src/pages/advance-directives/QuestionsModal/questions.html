@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Questions</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides>
+    <ng-container *ngFor="let group of groups">
+      <ion-slide class="explanations">
+        <ion-card color="light">
+          <ion-card-header color="primary">
+            {{group.groupTitle}}
+          </ion-card-header>
+          <ion-card-content>
+            {{group.groupDescription}}
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ng-container *ngFor="let question of group.questions">
+        <ion-slide *ngIf="question.type == 'text'">
+          <h1>{{question.label}}</h1>
+          <ion-list *ngFor="let answer of question.answers">
+            <ion-item>
+              <ion-label fixed>{{answer.label}}</ion-label>
+              <ion-input type="text" #textValue (input)="changeAnswer(question, answer, textValue.value)" value="{{answer.value}}"></ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-slide>
+        <ion-slide *ngIf="question.type == 'radio'">
+          <h1>{{question.label}}</h1>
+          <ion-list radio-group [(ngModel)]="radioAnswer">
+            <ng-container *ngFor="let answer of question.answers">
+              <ion-item text-wrap item-divider>
+                <ion-label>{{answer.label}}</ion-label>
+                <ion-radio #radioValue value="{{answer.name}}" (ionSelect)="changeAnswer(question, answer)"></ion-radio>
+              </ion-item>
+              <ng-container *ngIf="answer.subAnswers && radioAnswer == answer.name">
+                <ion-list radio-group [(ngModel)]="radioSubAnswer">
+                  <ng-container *ngFor="let subAnswer of answer.subAnswers">
+                    <ion-item text-wrap class="sub-item">
+                      <ion-label class="subAnswer">{{subAnswer.label}}</ion-label>
+                      <ion-radio value="{{subAnswer.name}}" (ionSelect)="changeAnswer(question, answer, '', subAnswer)"></ion-radio>
+                    </ion-item>
+                    <ion-list radio-group>
+                      <ng-container *ngIf="subAnswer.subAnswers && radioSubAnswer == subAnswer.name">
+                        <ion-item text-wrap class="sub-sub-item" *ngFor="let subSubAnswer of subAnswer.subAnswers">
+                          <ion-label class="subSubAnswer">{{subSubAnswer.label}}</ion-label>
+                          <ion-radio value="{{subSubAnswer.name}}" (ionSelect)="changeAnswer(question, answer, '', subAnswer, subSubAnswer)"></ion-radio>
+                        </ion-item>
+                      </ng-container>
+                    </ion-list>
+                  </ng-container>
+                </ion-list>
+              </ng-container>
+            </ng-container>
+          </ion-list>
+        </ion-slide>
+        <ion-slide *ngIf="question.type == 'checkbox'">
+          <h1>{{question.label}}</h1>
+          <ion-list *ngFor="let answer of question.answers">
+            <ion-item text-wrap item-divider>
+              <ion-label>{{answer.label}}</ion-label>
+              <ion-checkbox #checkValue (ionChange)="changeAnswer(question, answer, checkValue.value)"></ion-checkbox>
+            </ion-item>
+          </ion-list>
+        </ion-slide>
+
+      </ng-container>
+    </ng-container>
+  </ion-slides>
+</ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button full (click)="close()" *ngIf="slides._isBeginning">{{'PROFILE.BUTTON.CLOSE' | translate }}</button>
+        <button ion-button full (click)="previous()" *ngIf="!slides._isBeginning">{{'PROFILE.BUTTON.PREVIOUS' | translate }}</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button full (click)="next()" *ngIf="!slides._isEnd">{{'PROFILE.BUTTON.NEXT' | translate }}</button>
+        <button ion-button full (click)="close()" *ngIf="slides._isEnd">{{'PROFILE.BUTTON.CLOSE' | translate }}</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

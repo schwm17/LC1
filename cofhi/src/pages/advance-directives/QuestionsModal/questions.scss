@@ -1,0 +1,24 @@
+page-questions {
+    ion-slide.swiper-slide {
+        align-items: flex-start;
+    }
+
+    ion-slide.swiper-slide.explanations {
+        align-items: center;
+    }
+
+    .sub-item {
+        padding-left: 50px !important;
+        padding-right: 25px;
+    }
+    .sub-sub-item{
+        padding-left: 75px !important;
+        padding-right: 50px;
+    }
+    
+    //Disappearing input fields on keyboard opening
+    .input-cover {
+    position: static;
+  }
+  
+}
