@@ -27,7 +27,7 @@ import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ProfilePage } from '../pages/profile/profile';
 import { BloodPage } from '../pages/blood/blood';
-import { TestPage } from '../pages/test/test';
+import { CofhiPage } from '../pages/cofhi/cofhi';
 import { PulseMeasurePage } from '../pages/blood/pulse-measure/pulse-measure';
 import { PulseDailyDataPage } from '../pages/blood/pulseDailyData/pulseDailyData';
 import { AdvanceDirectivesPage } from './../pages/advance-directives/advance-directives';
@@ -40,7 +40,7 @@ import { Keyboard } from '@ionic-native/keyboard';
     MiDemo,
     HomePage,
     BloodPage,
-    TestPage,
+    CofhiPage,
     PulseMeasurePage,
     PulseDailyDataPage,
     ImpressumPage,
@@ -69,7 +69,7 @@ import { Keyboard } from '@ionic-native/keyboard';
     MiDemo,
     HomePage,
     BloodPage,
-    TestPage,
+    CofhiPage,
     PulseMeasurePage,
     PulseDailyDataPage,
     ImpressumPage,

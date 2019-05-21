@@ -14,10 +14,10 @@
     <ng-container *ngFor="let group of groups">
       <ion-slide class="explanations">
         <ion-card color="light">
-          <ion-card-header color="primary">
+          <ion-card-header >
             {{group.groupTitle}}
           </ion-card-header>
-          <ion-card-content>
+          <ion-card-content >
             {{group.groupDescription}}
           </ion-card-content>
         </ion-card>
@@ -85,7 +85,7 @@
       </ion-col>
       <ion-col>
         <button ion-button full (click)="next()" *ngIf="!slides._isEnd">{{'PROFILE.BUTTON.NEXT' | translate }}</button>
-        <button ion-button full (click)="close()" *ngIf="slides._isEnd">{{'PROFILE.BUTTON.CLOSE' | translate }}</button>
+        <button ion-button full (click)="sendAnswers()" *ngIf="slides._isEnd">{{'PROFILE.BUTTON.SAVE' | translate }}</button>
       </ion-col>
     </ion-row>
   </ion-grid>

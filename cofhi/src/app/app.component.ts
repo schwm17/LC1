@@ -18,7 +18,7 @@ import { ProfilePage } from "../pages/profile/profile";
 import { BloodPage } from '../pages/blood/blood';
 import { AdvanceDirectivesPage } from './../pages/advance-directives/advance-directives';
 import { ImpressumPage } from './../pages/impressum/impressum';
-import { TestPage } from '../pages/test/test';
+import { CofhiPage } from '../pages/cofhi/cofhi';
 
 @Component({
   selector: 'page-app',
@@ -62,11 +62,11 @@ export class MiDemo {
      * Set pages for the side menu
      * Stream is needed for 'live' updating the translations of the menu strings
      */
-    this.translate.stream(['BLOOD.TITLE', 'HOME.TITLE', 'AD.TITLE', 'TEST.TITLE']).subscribe(value => {
+    this.translate.stream(['BLOOD.TITLE', 'HOME.TITLE', 'AD.TITLE', 'COFHI.TITLE']).subscribe(value => {
       this.pages = [
         { title: value['HOME.TITLE'], component: HomePage, icon: 'assets/icon/notifications.svg' },
         { title: value['BLOOD.TITLE'], component: BloodPage, icon: 'assets/icon/studies.svg' },
-        { title: value['TEST.TITLE'], component: TestPage, icon: 'assets/icon/studies.svg' },
+        { title: value['COFHI.TITLE'], component: CofhiPage, icon: 'assets/icon/studies.svg' },
         { title: value['AD.TITLE'], component: AdvanceDirectivesPage, icon: 'assets/icon/apps.svg' },
       ];
     });

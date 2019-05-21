@@ -318,12 +318,15 @@ export class BloodPage {
   }
 
   private loadData(): void {
-    this.midataConnectionService.search('Observation/$lastn', { max: 1000, _sort: '-date', code: Globals.HEARTRATE.toString, patient: this.midataConnectionService.getUser().id })
+    
+    this.midataConnectionService.search('Observation/$lastn', { max: 1000, code: Globals.HEARTRATE.toString, patient: this.midataConnectionService.getUser().id })
       .then(response => {
+        
         if( response.length > 0) {
-
+         
           response.forEach((measure: Observation) => {
             this.addPulseMeasure(measure.getProperty('valueQuantity')['value'], measure.getProperty('effectiveDateTime'));
+            
           });
 
           this.sortPulseDataByDay();
