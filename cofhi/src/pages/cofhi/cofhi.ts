@@ -2,7 +2,6 @@
 import { Question } from '../advance-directives/Objects/Question';
 import { Group } from '../advance-directives/Objects/Group';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { IonicPage, ModalController } from 'ionic-angular';
 import { HttpClient } from "@angular/common/http";
 import { Answer } from "../advance-directives/Objects/Answer";

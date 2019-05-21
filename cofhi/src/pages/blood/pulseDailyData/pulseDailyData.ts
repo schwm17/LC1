@@ -11,7 +11,6 @@ import Chart from 'chart.js';
 export class PulseDailyDataPage {
 
   @ViewChild('chartCanvas') chartCanvas;
-  private pulseChart: Chart;
   private dateOfDay: Date;
   private dailyData : Array<{ date: Date, value: number }>;
 
