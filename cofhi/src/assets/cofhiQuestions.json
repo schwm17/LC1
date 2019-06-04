@@ -5,20 +5,20 @@
             "groupDescription": "Diese Umfrage fragt nach Ihrer Einschätzung über Ihren Fuss/Knöchel. Diese Informationen werden uns helfen, den Überblick zu behalten, wie Sie sich bezüglich Ihres Fusses/Knöchels fühlen.",
             "questions": [
                 {
-                    "question": "Personalien: ",
+                    "question": "Was ist die Ursache Ihrer Verletzung?",
                     "inputType": "text",
                     "answers": [
                         {
-                            "label": "Name: ",
-                            "value": "name"
+                            "label": "Hauptgrund: ",
+                            "value": "mainReason"
                         },
                         {
-                            "label": "Vorname: ",
-                            "value": "prename"
+                            "label": "Bemerkung: ",
+                            "value": "furtherReasons"
                         },
                          {
-                            "label": "Alter: ",
-                            "value": "age"
+                            "label": "Unfalldatum: ",
+                            "value": "dateOfAccident"
                         }
                     ]
                 },

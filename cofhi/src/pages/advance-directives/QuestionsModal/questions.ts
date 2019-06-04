@@ -9,13 +9,8 @@ import { CheckboxAnswer } from "../Objects/AnswersType/CheckboxAnswer";
 import { Answer } from "../Objects/Answer";
 import { Question } from "../Objects/Question";
 
-
-
 import { Resource, QuestionnaireResponse, QUESTIONNAIRERESPONSESTATUS } from 'Midata';
 import { MidataService } from '../../../services/MidataService';
-
-
-
 
 
 @IonicPage()
@@ -137,7 +132,7 @@ export class QuestionsPage {
   private formatDate(date) {
     var d = new Date(date),
         month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
+        day = '' + d.getDate()
         
 
     if (month.length < 2) month = '0' + month;

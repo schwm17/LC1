@@ -36,7 +36,7 @@ export class PulseDailyDataPage {
 
     max = Math.max(...graphDatas) + 30;
 
-    this.pulseChart = new Chart(this.chartCanvas.nativeElement, {
+  /*  this.pulseChart = new Chart(this.chartCanvas.nativeElement, {
       type: 'line',
       data: {
         labels: graphLabels,
@@ -73,7 +73,7 @@ export class PulseDailyDataPage {
           }
         }
       }
-    });
+    }); */
   }
 
   formatDate(date: Date, format: string): string {

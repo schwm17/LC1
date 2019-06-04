@@ -66,7 +66,7 @@ export class MiDemo {
       this.pages = [
         { title: value['HOME.TITLE'], component: HomePage, icon: 'assets/icon/notifications.svg' },
         { title: value['BLOOD.TITLE'], component: BloodPage, icon: 'assets/icon/studies.svg' },
-        { title: value['COFHI.TITLE'], component: CofhiPage, icon: 'assets/icon/studies.svg' },
+        { title: value['COFHI.TITLE'], component: CofhiPage, icon: 'assets/icon/questionnaire.svg' },
         { title: value['AD.TITLE'], component: AdvanceDirectivesPage, icon: 'assets/icon/apps.svg' },
       ];
     });
