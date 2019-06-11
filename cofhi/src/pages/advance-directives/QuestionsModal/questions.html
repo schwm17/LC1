@@ -26,10 +26,14 @@
         <ion-slide *ngIf="question.type == 'text'">
           <h1>{{question.label}}</h1>
           <ion-list *ngFor="let answer of question.answers">
-            <ion-item>
+              <ion-item *ngIf="answer.label == 'Unfalldatum: '">
+                  <ion-label fixed>{{answer.label}}</ion-label>
+                  <ion-input type="date" #textValue (input)="changeAnswer(question, answer, textValue.value)" value="{{answer.value}}"></ion-input>
+            </ion-item>
+          <ion-item *ngIf="answer.label != 'Unfalldatum: '">
               <ion-label fixed>{{answer.label}}</ion-label>
               <ion-input type="text" #textValue (input)="changeAnswer(question, answer, textValue.value)" value="{{answer.value}}"></ion-input>
-            </ion-item>
+            </ion-item> 
           </ion-list>
         </ion-slide>
         <ion-slide *ngIf="question.type == 'radio'">

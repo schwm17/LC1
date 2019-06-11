@@ -18,7 +18,7 @@ import { CheckboxAnswer } from "../advance-directives/Objects/AnswersType/Checkb
 })
 export class CofhiPage {
 
-  groups: Group[];
+  groups: Group[]; // Array that will contain all Groups, which themselve contain all the Questions of the Questionnaire.
   jsonObj: any;
   constructor(public modalCtrl: ModalController, public httpClient: HttpClient) {
   }
@@ -45,6 +45,11 @@ export class CofhiPage {
   }
 
   getGroupsFromJson() {
+
+    // Very long and complicated Method that converts the JSON into a multidimensional array...
+
+
+
     this.groups = [];
     this.jsonObj.groups.forEach(group => {
       let questions: Question[] = [];
