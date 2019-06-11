@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'COFHI.TITLE' | translate }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <h3>Fragebogen cofhi</h3>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-2></ion-col>
+          <ion-col col-8><button ion-button color="secondary" round block (click)="askQuestions()">{{'AD.DESCRIPTION' | translate}}</button></ion-col>
+          <ion-col col-2></ion-col>
+        </ion-row>
+      </ion-grid>
+     
+</ion-content>

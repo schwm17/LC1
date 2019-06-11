@@ -1,0 +1,57 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{ 'IMPRESSUM.TITLE' | translate }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div style="margin-left: 5%; margin-right: 5%; text-align:center;">
+      <h3>{{ 'IMPRESSUM.VERSION' | translate }}</h3>
+      <p>{{appVersionNumber}}</p>
+      <hr>
+
+      <h3>{{ 'IMPRESSUM.PUBLISHER' | translate }}</h3>
+      <p>{{ 'IMPRESSUM.PUBLISHERNAME' | translate }}</p>
+      <hr>
+
+      <h3>{{ 'IMPRESSUM.IMPLEMENTATION' | translate }}</h3>
+      <p><i>{{ 'IMPRESSUM.APP' | translate }}</i><br>
+        {{ 'IMPRESSUM.BFH' | translate }}<br>
+        {{ 'IMPRESSUM.I4MI' | translate }}</p>
+      <p>&nbsp;</p>
+      <p><i>{{ 'IMPRESSUM.PLATFORM' | translate }}</i><br>
+        {{ 'IMPRESSUM.ETH' | translate }}<br>
+        {{ 'IMPRESSUM.IIS' | translate }}
+      </p>
+      <hr>
+
+      <h3>{{ 'IMPRESSUM.DATA_RETENTION' | translate }}</h3>
+      <p><a href="{{parameters.midataPlatformURL}}">{{parameters.midataPlatformURL}}</a></p>
+
+      <br>
+
+      <div style="width: 90%" style="border: 0px;">
+        <table>
+          <tr>
+            <td style="width: 33%">
+              <img [src]="parameters.pathLogoBFH">
+            </td>
+            <td style="width: 33%">
+              <img [src]="parameters.pathLogoPublisher">
+            </td>
+            <td style="width: 33%">
+              <img [src]="parameters.pathLogoETH">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <img [src]="parameters.pathLogoMIDATA">
+            </td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</ion-content>

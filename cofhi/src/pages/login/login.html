@@ -1,0 +1,18 @@
+<ion-content>
+  
+  <div id="contentZone">
+    <h2 class="slide-title">{{ 'APPCOMPONENT.WELCOME' | translate }}</h2>
+    <div class="cofhiLogoWrapper">
+      <ion-img  src="assets/img/cofhi-ext_logo_print.png" class="cofhiLogo" ></ion-img>
+    </div>
+  </div>
+  
+  <div id="btnZone">
+    <div class="wrapper default" id="btnLogin" (click)="login()">
+      {{ 'APPCOMPONENT.LOGIN' | translate }}
+    </div>
+    <div class="wrapper" id="btnRegister" (click)="register()">
+      {{ 'APPCOMPONENT.REGISTER' | translate }}
+    </div>
+  </div>
+</ion-content>

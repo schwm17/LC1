@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'BLOOD.TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content has-footer no-bounce overflow-scroll='false'>
+  <ion-fab right bottom #fab>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="showPromptMeasure(fab)"><ion-icon name="create"></ion-icon></button>
+      <button ion-fab (click)="showTakeMeasure(fab)"><ion-icon name="pulse"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-item>
+    <ion-label>{{ 'BLOOD.MYGROUP' | translate }}</ion-label>
+    <ion-select interface="popover">
+      <ion-option value="a+">A+</ion-option>
+      <ion-option value="a-">A-</ion-option>
+      <ion-option value="b+">A+</ion-option>
+      <ion-option value="b-">A-</ion-option>
+      <ion-option value="o+">O+</ion-option>
+      <ion-option value="o-">O-</ion-option>
+      <ion-option value="ab">AB-</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-card [hidden]="pulseData.length < 2">
+    <ion-card-content>
+      <canvas #chartCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-label>{{ 'BLOOD.MYMEASURE' | translate }}</ion-label>
+  </ion-item>
+  <ion-list *ngIf="!pulseData.length">
+    <ion-item-divider color="light">
+      {{ 'BLOOD.NOVALUE' | translate }}
+    </ion-item-divider>
+  </ion-list>
+  <ion-list [virtualScroll]="dayToBeDisplayed" [headerFn]="getWeeklyHeader" [approxItemHeight]="'49px'">
+    <ion-item-divider color="light" *virtualHeader="let header">
+      {{ header }}
+    </ion-item-divider>
+    <button ion-item *virtualItem="let day" (click)="showDate(day)">
+        <ion-icon name="heart-outline" item-start color="danger"></ion-icon>
+        <ion-label>{{formatDate(day)}}</ion-label>
+      </button>
+  </ion-list>
+</ion-content>

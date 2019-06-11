@@ -1,0 +1,30 @@
+page-profile {
+  .mod{
+    //background-color: #D8D8D8; 
+  }
+    
+  img {
+    max-width: 100%; /* This rule is very important, please do not ignore this! */
+  }
+    
+  #personalPhoto{
+    // border-radius: 45%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .mi-or-form .mi-at-input_fieldset:first-of-type {
+    margin-top: 105px;
+    padding-top: 0px !important;
+  }
+
+  .mi-at-avatar--inverted{
+    // background-color: white;
+  }
+
+  .opt-select {
+    font-size: 14px;
+    color: #b3b3b3;
+    background-color: white;
+  }
+}

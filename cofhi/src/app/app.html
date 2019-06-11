@@ -1,0 +1,53 @@
+<ion-menu [content]="content" id="sideMenu" (ionOpen)="menuOpened()">
+  <ion-content>
+    <div class="mi-or-mobile_menu">
+      <div class="mi-mo-menu_header">
+        <img class="mi-at-icon" src="assets/icon/hamburger-close.svg" alt="close" (click)='closeMenu()' />
+        
+        <div *ngIf="!photoAvailable" class="mi-at-avatar">
+          <div class="mi-at-avatar__initial">
+            {{initial}}
+          </div>
+        </div>
+        
+        <div *ngIf="photoAvailable" class="mi-at-avatar">
+          <div>
+          <img src="{{photoAccessURL}}" class="mi-at-avatar__initial" id="personalPhoto"/>
+          </div>
+        </div>
+        
+        <div class="mi-mo-menu_header__data">
+          <div class="mi-mo-menu_header__data_user">
+            <span class="mi-at-text mi-at-text--title mi-at-text--white mi-at-text--highlighted">{{name}}</span>
+            <span class="mi-at-text mi-at-text--smallest mi-at-text--white">{{username}}</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="mi-mo-menu_main_buttons">
+        <button class="mi-mo-flat_button" (click)='openPage(profilePage)'>
+          <span class="mi-at-text">{{ 'MENU.EDITPROFILE' | translate }}</span>
+          <img class="mi-at-icon" src="assets/icon/edit.svg" alt="edit" />
+        </button>
+        <button class="mi-mo-flat_button" (click)="logout()">
+          <span class="mi-at-text">{{ 'MENU.SIGNOUT' | translate }}</span>
+          <img class="mi-at-icon" src="assets/icon/sign-out.svg" alt="edit" />
+        </button>
+      </nav>
+
+      <nav class="mi-mo-menu_items_list">
+        <a class="mi-mo-menu_item" *ngFor="let page of pages" (click)="openPage(page)">
+          <img class="mi-at-icon" src="{{page.icon}}" alt="notifications" />
+          <span class="mi-at-text">{{page.title}}</span>
+        </a>
+      </nav>
+
+      <div class="mi-mo-menu_footer">
+        <span class="mi-at-text mi-at-text--smaller">{{ 'MENU.CONTACT' | translate }}</span>
+        <span class="mi-at-text mi-at-text--smaller" (click)="openPage(impressumPage)">{{ 'IMPRESSUM.TITLE' | translate }}</span>
+      </div>
+    </div>
+  </ion-content>
+</ion-menu>
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

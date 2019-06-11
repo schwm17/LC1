@@ -1,0 +1,115 @@
+{
+    "groups": [
+        {
+            "groupTitle": "Fragebogen Orthopädie",
+            "groupDescription": "Diese Umfrage fragt nach Ihrer Einschätzung über Ihren Fuss/Knöchel. Diese Informationen werden uns helfen, den Überblick zu behalten, wie Sie sich bezüglich Ihres Fusses/Knöchels fühlen.",
+            "questions": [
+                {
+                    "question": "Was ist die Ursache Ihrer Verletzung?",
+                    "inputType": "text",
+                    "answers": [
+                        {
+                            "label": "Hauptgrund: ",
+                            "value": "mainReason"
+                        },
+                        {
+                            "label": "Bemerkung: ",
+                            "value": "furtherReasons"
+                        },
+                         {
+                            "label": "Unfalldatum: ",
+                            "value": "dateOfAccident"
+                        }
+                    ]
+                },
+                {
+                    "question": "Haben Sie Schwellungen an Ihrem Fuss/Knöchel?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Immer",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Oft",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Manchmal",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Selten",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Nie",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Können Sie Ihren Fuss/Knöchel komplett strecken?",
+                    "inputType": "radio",
+                    "answers": [
+                        {
+                            "label": "Immer",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Oft",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Manchmal",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Selten",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Nie",
+                            "subAnswers": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Bei welchen der folgenden Aktivitäten verspühren Sie Schmerzen in Ihrem Fuss/Knöchel?",
+                    "inputType": "checkbox",
+                    "answers": [
+                        {
+                            "label": "Fuss drehen/ schwenken",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Fuss strecken",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Fuss beugen",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Auf flachem Untergrund gehen",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Treppen steigen",
+                            "subAnswers": false
+                        },
+                        {
+                            "label": "Nachts im Bett",
+                            "subAnswers": false
+                        },{
+                            "label": "Beim aufrecht stehen",
+                            "subAnswers": false
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ]
+    
+}

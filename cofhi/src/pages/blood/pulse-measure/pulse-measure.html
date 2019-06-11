@@ -1,0 +1,34 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button navPop icon-only>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{ 'BLOOD.NEWMEASURE.TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      {{ 'BLOOD.NEWMEASURE.CAPTIONTITLE' | translate }}
+    </ion-card-header>
+    <ion-card-content>
+      {{ 'BLOOD.NEWMEASURE.CAPTION' | translate }}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row [hidden]="isMeasuring">
+    <ion-col>
+      <button ion-button (click)="takeMeasure()">{{ 'BLOOD.NEWMEASURE.START' | translate }}</button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row [hidden]="!isMeasuring">
+    <ion-col class="counter">
+      {{counter}}
+    </ion-col>
+  </ion-row>
+</ion-content>
